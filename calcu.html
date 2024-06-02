@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator in jQuery</title>
+    <link rel="stylesheet" href="calcu.css">
+</head>
+<style>body {
+    background-color: rgb(236, 232, 175);
+    margin-top: 150px;
+  }
+  p {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    position: relative;
+    left: 35%;
+  }
+  .calculator {
+    position: relative;
+    margin: 1em auto;
+    padding: 1em auto;
+    display: block-inline;
+    width: 350px;
+    background-color: darkslategrey;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px 3px black;
+    font-family: 'Oxygen';
+  }
+  .calc-row {
+    text-align: center;
+  }
+  .calc-row div.screen {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    display: table;
+    width: 85%;
+    background-color: white;
+    text-align: right;
+    font-size: 2em;
+    min-height: 1.2em;
+    margin-left: 0.5em;
+    padding-right: 0.5em;
+    border: 1px solid #888;
+    color: #555;
+  }
+  .calc-row div {
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    border: 1px solid #555;
+    background-color: beige;
+    padding: 10px 0;
+    margin: 7px 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 1px 1px #222;
+    width: 50px;
+  }
+  .calc-row div.equal {
+    width: 112px;
+  }
+  .calc-row div.equal {
+    margin-left: 5px;
+  }</style>
+<body>
+    <div class="calculator">
+        <p>jquery Calculator</p>
+        <div class="calc-row">
+            <div class="screen">0123456789</div>
+        </div>
+        <div class="calc-row">
+            <div class="button">C</div><div class="button">CE</div>
+            <div class="button backspace">Back</div>
+            <div class="button plus-minus">+/-</div>
+            <div class="button">%</div>
+        </div>
+        <div class="calc-row">
+            <div class="button">7</div><div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button">/</div>
+            <div class="button">sqrt</div>
+        </div>
+        <div class="calc-row">
+            <div class="button">4</div><div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button multiply">*</div>
+            <div class="button inverse">1/x</div>
+        </div>
+        <div class="calc-row">
+            <div class="button">1</div><div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button minus">-</div>
+            <div class="button pi">pi</div>
+        </div>
+        <div class="calc-row">
+            <div class="button">0</div><div class="button decimal">.</div>
+            <div class="button plus">+</div>
+            <div class="button equal">=</div>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="calcu.js"></script>
+</body>
+</html>
