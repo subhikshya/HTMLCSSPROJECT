@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        let s=prompt('Enter Your personal Details in the given form');
+    </script>
+    <h1 align="center"> PERSONAL &nbsp; INFORMATION</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Your Full Name :</label>
+                    </td>
+                     <td>  
+                        <select name="title" id="t1">
+                        <option selected disabled hidden>--Select--</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Miss.">Mrs.</option>
+                        </select>
+                        <br>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <label for="mail">Email ID :</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Father's Name :</label>
+                    </td>
+                    <td>
+                        <select name="name" id="name">
+                        <option selected disabled hidden>--Select--</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        </select> 
+                        <br>
+                        <input type="text" name="username" placeholder="Enter Name">
+                    </td>
+                    <td>
+                        <label>Mother's Name :</label>
+                    </td>
+                    <td>
+                        <select name="name" id="name">
+                        <option selected disabled hidden>--Select--</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        </select> 
+                        <br>
+                        <input type="text" name="username" placeholder="Enter Name">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="gender">Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" value="Male">Male
+                        <input type="radio" value="Female">Female
+                        <input type="radio" value="Others">Others
+                    </td>
+                    <td>
+                        <label>Date of Birth:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="returndate">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Category:</label>
+                    </td>
+                    <td>
+                        <select name="category" id="category">
+                        <option selected disabled hidden>--Select--</option>
+                        <option>Gen</option>
+                        <option>OBC</option>
+                        <option>SC</option>
+                        <option>ST</option>
+                        </select> <br>
+                    </td>
+                    <td>
+                        <label>Religion:</label>
+                    </td>
+                    <td>
+                        <select name="name" id="religion">
+                        <option selected disabled hidden>--Select--</option>
+                        <option>Hindu</option>
+                        <option>Muslim</option>
+                        <option>Bramhin</option>
+                        <option>Others</option>
+                        </select> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Mobile Number :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="mobile" placeholder="Enter Number">
+                    </td>
+                    <td>
+                        <label>Address Line: </label>
+                    </td>
+                    <td>
+                        <textarea id="address 1" rows="1" cols="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>City</label>
+                    </td>
+                    <td>
+                        <input type="text" name="city" placeholder="City">
+                    </td>
+                    <td>
+                        <label>States:</label>
+                    </td>
+                    <td>
+                        <select name="states">
+                            <option selected disabled hidden>--Select--</option>
+                            <option>Jammu & Kashmir</option>
+                            <option>New Delhi</option>
+                            <option>Maharastra</option>
+                            <option>Haryana</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Identification Details:</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label>Adhar Card Number:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="acn">
+                    </td>
+                    <td>
+                        <label>Upload Photo:</label>
+                    </td>
+                    <td>
+                        <input type="file" name="fileupload">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Pan Card Number:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="pcn">
+                    </td>
+                        
+                    <td>
+                        <label>Upload Signature:</label>
+                    </td>
+                    <td>
+                        <input type="file" name="fileupload">
+                    </td>    
+                </tr>
+              
+            </table>    
+    
+        </fieldset>
+        <div style="padding-top: 20px;" >
+            <input type="submit" class="submit" value="Submit">
+            <input type="submit" class="submit" value="back">
+          </div>
+          
+    </form>
+</body>
+</html>
